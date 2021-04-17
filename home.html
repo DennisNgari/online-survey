@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Survey</title>
 </head>
 <body>
     <div class="navigation">
-            <ul class="nav">
-                <li><a href="data.html">Home</a></li>
+        <h1 class="logo">(MASC20004)</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
                 <li><a href="data.html">Data</a></li>
             </ul>
     </div>
@@ -18,33 +20,44 @@
 <main class="main">
 <div class="header">
     <h1> Quantitative Methods</h1>
-    <h3>(MASC20004)</h6>
+    <h3 class="unit-code">(MASC20004)</h6>
     <h2 class="online-survey">Online Survey</h2>
 </div>
 <!-- Input -->
-<div class="input">
+<form id="input-form">
     <label for="label"> 
-        <h3> Enter your Age:</h3>
-        <input type="number" required placeholder="Age"/>
+        <h3 class="label-font"> Enter Age:</h3>
+        <input id="age" type="number"min="1" max="120" required placeholder="Age"/>
     </label>
 
     <label for="label">
-        <h3>Enter your Height(cms):</h3>
-        <input type="number" required placeholder="Height"/>
+        <h3 class="label-font">Enter Height (Cms):</h3>
+        <input id="height" type="number" min="1" max="300" required placeholder="Height"/>
     </label>
 
     <label for="label"> 
-        <h3>Enter your Weight(Kgs):</h3>
-        <input type="number" required placeholder="Weight"/>
+        <h3 class="label-font">Enter Weight(Kgs):</h3>
+        <input id="weight" type="number" min="1" max="500" required placeholder="Weight"/>
     </label>
     <input class="submit" type="submit" >
-
-</div>
-<div id="success">
-    <h2 class="success-text">SUCCESS!</h2>
-    <h2 class="success-text">Thank you for Participating.</h3>
+</form>
+<!-- Alert -->
+<div class="showAlert"></div>
+<div class="container">
+    <!-- <table id=table-Id>
+  </table> -->
 </div>
 </main>
-    
+
+<!-- footer -->
+<footer >
+    <div class="footer-home">
+        <p>Quantitative Methods for Business (MASC20004)</p>
+        <p>Spring-2021- CW 01</p>
+        <p class="p-home" >Copyright &copy; 2021, All Rights Reserved.</p>
+    </div>
+</footer>
+ 
+<script src="./app.js"></script>
 </body>
 </html>

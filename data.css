@@ -42,7 +42,7 @@
 
 .nav-links a {
   list-style: none;
-  font-size: 30px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 5px;
@@ -56,8 +56,8 @@
   position: absolute;
   font-family: "Lobster", cursive;
   font-weight: bold;
-  font-size: 2rem;
-  left: 50px;
+  font-size: 16px;
+  left: 30px;
   cursor: pointer;
 }
 
@@ -69,13 +69,19 @@ a:hover {
 
 /* The body */
 .main {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to right,
       var(--color-secondary-light-1),
       var(--color-secondary-light-2),
       var(--color-secondary-light-3)
     ),
-    url(./images/nat-1-large.jpg);
+    url(./images/nat-1-large.jpg); */
+    background: linear-gradient(
+      to right,
+      var(--color-secondary-light-1),
+      var(--color-secondary-light-2),
+      var(--color-secondary-light-3)
+    );
   min-height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -110,13 +116,13 @@ td {
 
 caption {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
   border-spacing: 0;
 }
 
 th {
-  font-size: 25px;
+  font-size: 20px;
   background-color: rgb(20, 65, 9);
   border: 1px solid rgba(134, 188, 37, 1);
   font-weight: bold;
@@ -124,16 +130,16 @@ th {
   color: white;
 }
 td {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .tfoot {
   margin: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-style: italic;
 }
 .p-data {
-  font-size: 20px;
+  font-size: 16px;
   font-style: bold;
   color: #fff;
   display: inline-block;
@@ -156,7 +162,7 @@ td {
 .p-footer {
   color: #fff;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 12px;
   padding: 20px;
   font-style: italic;
   letter-spacing: 2px;

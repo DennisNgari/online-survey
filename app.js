@@ -36,12 +36,13 @@ class UI {
     setTimeout(() => document.querySelector(".table").remove(), 3000);
   }
 
+  //The success message
   static showAlert() {
     const alertDiv = document.querySelector(".showAlert");
     const successDiv = document.createElement("success");
     alertDiv.innerHTML = `
     <div class=success>
-    <h2 class="success-text">SUCCESS!</h2>
+    <h2 class="success-text">Entry SUCCESSful!</h2>
     <h2 class="success-text">Thank you for Participating in this Survey...</h3>
     <div class=success>
     `;
@@ -58,9 +59,6 @@ class UI {
     document.getElementById("weight").value = "";
   }
 }
-////////////////////////////////////////////////////////
-//Display Persons
-document.addEventListener("DOMContentLoaded", UI.displayedData);
 
 //Add a Person
 //Event add age, height and weight on submit.
